@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %} - Platform</title>
+    {% block head %}
+    {% endblock %}
+</head>
+<header>
+    {% block header %}
+    {% endblock %}
+</header>
+<body>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<footer>
+    {% block foot %}
+        &copy; Copyright 2016 by US.
+    {% endblock %}
+</footer>
+{% block footer %}
+{% endblock %}
+</body>
+</html>
