@@ -2,7 +2,7 @@
  * typography
  * --------------------------------------------------
  */
-@import url("http://fonts.googleapis.com/css?family=Oswald");
+@import url("http://fonts.googleapis.com/css?family=Oswald:300,400");
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #434A54;
@@ -2026,23 +2026,66 @@ a.list-group-item {
     -moz-border-radius: 4px 0 4px 4px;
     border-radius: 4px 0 4px 4px; }
 
+body {
+  background: #777; }
+
 #video-header {
   position: relative;
-  height: 75vh; }
-  #video-header #video-text {
-    position: absolute;
-    width: 100%;
-    top: calc(50% - 140px);
-    left: 0; }
-    #video-header #video-text h1, #video-header #video-text h2, #video-header #video-text h3, #video-header #video-text h4, #video-header #video-text h5 {
-      font-family: "Oswald", sans-serif;
-      text-align: center; }
+  height: 75vh;
+  display: flex;
+  align-content: center;
+  align-items: center; }
+  #video-header #video-text h1, #video-header #video-text h2, #video-header #video-text h3, #video-header #video-text h4, #video-header #video-text h5 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: #FFF; }
+  #video-header #video-text h4 {
+    font-style: italic;
+    font-weight: 300; }
   #video-header video {
     position: fixed;
     top: 0;
     left: 0;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100vh;
     z-index: -100; }
+
+#video-header {
+  background-color: transparent; }
+
+section {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.carre {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  width: auto;
+  position: relative; }
+  .carre h1, .carre h5 {
+    color: #FFF; }
+  .carre .content {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  .carre a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+.carre:hover {
+  background: rgba(1, 1, 1, 0.3); }
+
+.marginTop30 {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=bootflat.css.map */

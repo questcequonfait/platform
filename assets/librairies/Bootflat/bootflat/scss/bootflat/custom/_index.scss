@@ -1,21 +1,29 @@
-@import url('http://fonts.googleapis.com/css?family=Oswald');
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400');
+
+body{
+  background: #777;
+}
 
 #video-header{
 
   position: relative;
   height: 75vh;
 
-  & #video-text{
+  display: flex;
+  align-content: center;
+  align-items: center;
 
-    position: absolute;
-    width: 100%;
-    top: calc(50% - 140px);
-    left: 0;
+  & #video-text{
 
    & h1, h2, h3, h4, h5{
      font-family: "Oswald", sans-serif;
      text-align: center;
+     color: $white;
    }
+   & h4{
+    font-style: italic;
+     font-weight: 300;
+    }
 
   }
 
@@ -23,9 +31,59 @@
     position: fixed;
     top: 0;
     left: 0;
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100vh;
 
     z-index: -100;
   }
+}
+
+#video-header{
+  background-color: transparent;
+}
+section{
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.carre{
+
+  text-align: center;
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 200px;
+  width: auto;
+
+  position: relative;
+
+  & h1, h5{
+    color: $white;
+  }
+
+  & .content{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  & a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.carre:hover{
+  background: rgba(1,1,1,0.3);
+}
+
+.marginTop30{
+  margin-top: 30px;
 }
