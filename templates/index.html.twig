@@ -5,12 +5,22 @@
     <!-- Add supplementary style or something else... -->
 {% endblock %}
 
-{% block content %}
-
+{% block body %}
+    <div class="test">
+    <section id="video-header">
+        <div id="video-text">
+            <h1>Event tittle</h1>
+            <h3>Event description, Aperiam autem consectetur distinctio inventore, ipsam, iusto laboriosam.</h3>
+            <h5>Machin - Theme</h5>
+        </div>
+        <video autoplay="" loop="" class="" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </section>
+    </div>
 {% endblock %}
 
 
 {% block footer %}
-    {{ parent() }}
     <!-- Add supplementary script or something else... -->
 {% endblock %}

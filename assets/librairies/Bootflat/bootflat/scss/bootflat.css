@@ -2,6 +2,7 @@
  * typography
  * --------------------------------------------------
  */
+@import url("http://fonts.googleapis.com/css?family=Oswald");
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #434A54;
@@ -2024,5 +2025,24 @@ a.list-group-item {
     -webkit-border-radius: 4px 0 4px 4px;
     -moz-border-radius: 4px 0 4px 4px;
     border-radius: 4px 0 4px 4px; }
+
+#video-header {
+  position: relative;
+  height: 75vh; }
+  #video-header #video-text {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 140px);
+    left: 0; }
+    #video-header #video-text h1, #video-header #video-text h2, #video-header #video-text h3, #video-header #video-text h4, #video-header #video-text h5 {
+      font-family: "Oswald", sans-serif;
+      text-align: center; }
+  #video-header video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: -100; }
 
 /*# sourceMappingURL=bootflat.css.map */
