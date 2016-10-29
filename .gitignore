@@ -2,3 +2,4 @@
 vendor/
 composer.lock
 assets/librairies/Bootflat/bootflat/scss/bootflat.css.map
+assets/librairies/Bootflat/bootflat/scss/bootflat.css
