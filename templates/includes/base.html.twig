@@ -4,20 +4,17 @@
     <title>{% block title %}{% endblock %} - Platform</title>
     {% block head %}
     {% endblock %}
-    <link rel="stylesheet" href="/assets/librairies/Bootflat/bootflat/scss/bootflat.css">
     <link rel="stylesheet" href="/assets/librairies/Bootflat/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/librairies/Bootflat/bootflat/scss/bootflat.css">
 </head>
 <header>
-    {% block header %}
-    {% endblock %}
+    {% include 'includes/navbar.html.twig' %}
 </header>
 <body>
 {% block body %}
 {% endblock %}
 <footer>
-    {% block foot %}
-        &copy; Copyright 2016 by US.
-    {% endblock %}
+    {% include 'includes/footer.html.twig' %}
 </footer>
 <script src=/assets/librairies/Bootflat/js/jquery-1.10.1.min.js></script>
 <script src=/assets/librairies/Bootflat/js/bootstrap.min.js></script>
