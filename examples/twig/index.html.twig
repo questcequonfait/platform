@@ -1,0 +1,13 @@
+{% include 'header.html.twig' %}
+
+Hello, {{ firstname }}
+<br />
+Your age is {{ age }}
+<br />
+<ul>
+    {% for language in languages %}
+        <li>{{ language }}</li>
+    {% endfor %}
+</ul>
+<br />
+Public: {% if is_public %}Yes{% else %}Non{% endif %}
