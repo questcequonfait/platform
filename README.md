@@ -1,11 +1,7 @@
 ## To start:
 
 Install composer.
-Install bower.
 
-
-Make:
+Type:
 
 composer install
-
-## DO NOT
