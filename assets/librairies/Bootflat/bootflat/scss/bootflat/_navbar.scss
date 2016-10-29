@@ -40,7 +40,7 @@ $navbar-inverse-background-color:            $black !default;
       }
       & .navbar-text,
       & .navbar-nav > li > a {
-          color: lighten($navbar-background-color, 40%);
+          color: darken($navbar-background-color, 15%);
           font-weight: bold;
       }
       & .navbar-nav > li > a:hover,
