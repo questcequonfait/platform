@@ -1,3 +1,4 @@
 .idea
 vendor/
 composer.lock
+assets/librairies/Bootflat/bootflat/scss/bootflat.css.map
