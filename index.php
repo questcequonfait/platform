@@ -12,5 +12,6 @@ $twig = new Twig_Environment($loader);
 
 $router = new Router($_GET['url']);
 $router->get('/', function($id){ global $twig; echo $twig->render('index.html.twig', array()); });
+$router->get('/list', function($id){ global $twig; echo $twig->render('events.html.twig', array()); });
 $router->get('/posts/:id/:id2', function($id, $id2){ echo "Voila l'article $id $id2"; });
 $router->run();
