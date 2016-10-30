@@ -20,6 +20,25 @@ $navbar-inverse-background-color:            $black !default;
   .navbar-form {
 	  padding: 0 !important;
   }
+
+  .nav{
+      & > li > a:hover,
+      & > li > a:focus {
+          color: $navbar-font-color;
+          background-color: transparent;
+      }
+
+  }
+    @media (max-width: 767px) {
+        .navbar-collapse{
+            background: $darkgray-dark;
+        }
+    }
+    span.icon-bar{
+        background-color: $white;
+    }
+
+
   .navbar-default {
       & {
           background-color: $navbar-background-color;
@@ -46,12 +65,13 @@ $navbar-inverse-background-color:            $black !default;
       & .navbar-nav > li > a:hover,
       & .navbar-nav > li > a:focus {
           color: $navbar-font-color;
+          background-color: transparent;
       }
       & .navbar-nav > .active > a,
       & .navbar-nav > .active > a:hover,
       & .navbar-nav > .active > a:focus {
           color: $navbar-font-color;
-          background-color: $navbar-background-color-active;
+          //background-color: $navbar-background-color-active;
       }
       & .btn-link[disabled]:hover,
       fieldset[disabled] & .btn-link:hover,
@@ -89,7 +109,7 @@ $navbar-inverse-background-color:            $black !default;
       @media (max-width: 767px) {
           & .navbar-nav > li > a:hover,
           & .navbar-nav > li > a:focus {
-              background-color: $navbar-background-color-active;
+              //background-color: $navbar-background-color-active;
           }
           & .navbar-nav .open .dropdown-menu > .divider {
               background-color: $navbar-item-background-color-hover;
