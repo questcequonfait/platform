@@ -1,0 +1,11 @@
+.footer-nav{
+
+  & .nav-item{
+    display: inherit;
+  }
+
+  & .nav-title{
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}
